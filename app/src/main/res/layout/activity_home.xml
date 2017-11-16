@@ -5,7 +5,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8b8c8b"
+    android:background="#eeeeee"
     tools:context="de.shisha.yildo.yildoshisha_app.HomeActivity">
 
     <RelativeLayout
@@ -32,7 +32,7 @@
             android:layout_centerHorizontal="true"
             android:paddingTop="30dp"
             android:text="@string/yildo_main_tv"
-            android:textColor="#d8d9d8"
+            android:textColor="#757575"
             android:textSize="35sp" />
 
     </RelativeLayout>

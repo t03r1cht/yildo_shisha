@@ -21,8 +21,10 @@
         <activity
             android:name=".AboutUsActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme"></activity>
-        <activity android:name=".GetraenkeActivity"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".GetraenkeActivity" />
+        <activity android:name=".NewsActivity" />
+        <activity android:name=".DrinksActivity"></activity>
     </application>
 
 </manifest>

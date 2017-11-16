@@ -2,10 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawer_layout_aboutus"
+    android:id="@+id/layout_aboutus"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8b8c8b"
+    android:background="#eeeeee"
     tools:context="de.shisha.yildo.yildoshisha_app.AboutUsActivity">
 
     <RelativeLayout
@@ -29,25 +29,25 @@
                     android:id="@+id/about_us_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="50px"
                     android:paddingTop="20dp"
                     android:text="@string/aboutus_title"
-                    android:textColor="#d2d3d2"
+                    android:textColor="#757575"
                     android:textSize="35sp" />
 
                 <TextView
                     android:id="@+id/about_us_content"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="50px"
                     android:layout_weight="1"
-                    android:paddingTop="15dp"
-                    android:text="@string/aboutus_content"
-                    android:textColor="#d2d3d2"
-                    android:textSize="15sp"
                     android:ellipsize="none"
+                    android:inputType="textMultiLine"
+                    android:paddingTop="15dp"
                     android:scrollHorizontally="false"
-                    android:inputType="textMultiLine"/>
+                    android:text="@string/aboutus_content"
+                    android:textColor="#757575"
+                    android:textSize="15sp" />
 
             </LinearLayout>
         </ScrollView>

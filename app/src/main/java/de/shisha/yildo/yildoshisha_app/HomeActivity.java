@@ -62,7 +62,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if(mToggle.onOptionsItemSelected(item)) {
+        if (mToggle.onOptionsItemSelected(item)) {
             return true;
         }
 
@@ -74,13 +74,13 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         int id = item.getItemId();
         DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 
-        if(id == R.id.nav_home) {
+        if (id == R.id.nav_home) {
             drawerLayout.closeDrawer(GravityCompat.START);
             Log.e(LOG_TAG, "Clicked nav_home");
             Intent intent = new Intent(HomeActivity.this, HomeActivity.class);
             this.startActivity(intent);
             Log.e(LOG_TAG, "Switched to intent 'HomeActivity'");
-        } else if(id == R.id.nav_aboutUs) {
+        } else if (id == R.id.nav_aboutUs) {
             drawerLayout.closeDrawer(GravityCompat.START);
             Log.e(LOG_TAG, "Clicked nav_aboutUs");
 
@@ -91,9 +91,31 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 Log.e(LOG_TAG, "Caught exception when trying to switch intent to 'AboutUsActivity'");
                 Log.e(LOG_TAG, e.toString());
             }
-        } else if(id == R.id.nav_drinks) {
+        } else if (id == R.id.nav_drinks) {
             drawerLayout.closeDrawer(GravityCompat.START);
             Log.e(LOG_TAG, "Clicked nav_drinks");
+
+            try {
+                Intent intent = new Intent(HomeActivity.this, DrinksActivity.class);
+                this.startActivity(intent);
+            } catch (Exception e) {
+                Log.e(LOG_TAG, "Caught exception when trying to switch intent to 'DrinksActivity'");
+                Log.e(LOG_TAG, e.toString());
+            }
+        } else if (id == R.id.nav_news) {
+            drawerLayout.closeDrawer(GravityCompat.START);
+            Log.e(LOG_TAG, "Clicked nav_news");
+
+            try {
+                Intent intent = new Intent(HomeActivity.this, NewsActivity.class);
+                this.startActivity(intent);
+            } catch (Exception e) {
+                Log.e(LOG_TAG, "Caught exception when trying to switch intent to 'NewsActivity'");
+                Log.e(LOG_TAG, e.toString());
+            }
+        } else if (id == R.id.nav_database) {
+            drawerLayout.closeDrawer(GravityCompat.START);
+            Log.e(LOG_TAG, "Clicked nav_database");
 
             try {
                 Intent intent = new Intent(HomeActivity.this, GetraenkeActivity.class);
@@ -102,7 +124,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 Log.e(LOG_TAG, "Caught exception when trying to switch intent to 'GetraenkeActivity'");
                 Log.e(LOG_TAG, e.toString());
             }
-        } else if(id == R.id.nav_exit) {
+        } else if (id == R.id.nav_exit) {
             drawerLayout.closeDrawer(GravityCompat.START);
             Log.e(LOG_TAG, "Clicked nav_exit");
             finish();
@@ -121,7 +143,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
     private void uncheckNavigationDrawer() {
         int size = nav_view.getMenu().size();
-        for(int i = 0; i < size; i++) {
+        for (int i = 0; i < size; i++) {
             nav_view.getMenu().getItem(i).setChecked(false);
         }
     }

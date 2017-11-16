@@ -2,14 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawer_layout_aboutus"
+    android:id="@+id/layout_getraenke"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8b8c8b"
+    android:background="#eeeeee"
     tools:context="de.shisha.yildo.yildoshisha_app.GetraenkeActivity">
 
     <RelativeLayout
-        android:id="@+id/main_content_rel_layout_getraenke"
+        android:id="@+id/main_content_rel_layout_news"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -25,8 +25,32 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+                <Button
+                    android:id="@+id/db_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add" />
+
+                <Button
+                    android:id="@+id/db_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Show" />
+
+                <Button
+                    android:id="@+id/db_clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Clear" />
+
+                <TextView
+                    android:id="@+id/db_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Placeholder" />
 
             </LinearLayout>
+
         </ScrollView>
     </RelativeLayout>
 

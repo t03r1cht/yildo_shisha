@@ -8,6 +8,10 @@
             android:icon="@mipmap/ic_home_black_24dp"
             android:title="@string/nav_home" />
         <item
+            android:id="@+id/nav_news"
+            android:icon="@mipmap/ic_public_black_24dp"
+            android:title="@string/nav_news" />
+        <item
             android:id="@+id/nav_aboutUs"
             android:icon="@mipmap/ic_announcement_black_24dp"
             android:title="@string/nav_aboutUs" />
@@ -21,6 +25,11 @@
             android:id="@+id/nav_drinks"
             android:icon="@mipmap/ic_local_drink_black_24dp"
             android:title="@string/nav_drinks" />
+
+        <item
+            android:id="@+id/nav_database"
+            android:icon="@mipmap/ic_local_drink_black_24dp"
+            android:title="Debug" />
         <item
             android:id="@+id/nav_smokes"
             android:icon="@mipmap/ic_smoking_rooms_black_24dp"
