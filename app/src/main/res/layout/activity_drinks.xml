@@ -8,10 +8,15 @@
     android:background="#eeeeee"
     tools:context="de.shisha.yildo.yildoshisha_app.DrinksActivity">
 
+
     <ListView
         android:id="@+id/drinks_lv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:clickable="false">
 
     </ListView>
 

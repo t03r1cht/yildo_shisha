@@ -127,6 +127,36 @@ public class SqliteHandler extends SQLiteOpenHelper {
         return gList;
     }
 
+    public ArrayList<Getraenk> get_item_list2() {
+        ArrayList<Getraenk> gList = new ArrayList<Getraenk>();
+        String selectQuery = "SELECT * FROM " + TABLE_GETRAENKE;
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+        if (cursor.moveToFirst()) {
+            do {
+                Getraenk g = new Getraenk();
+                g.set_id(Integer.parseInt(cursor.getString(0)));
+                g.setName(cursor.getString(1));
+                g.setPreis(cursor.getDouble(2));
+                gList.add(g);
+            } while (cursor.moveToNext());
+        }
+        return gList;
+    }
+
+    public List<String> get_item_name_list() {
+        List<String> gList = new ArrayList<String>();
+        String selectQuery = "SELECT * FROM " + TABLE_GETRAENKE;
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+        if (cursor.moveToFirst()) {
+            do {
+                gList.add(cursor.getString(1));
+            } while (cursor.moveToNext());
+        }
+        return gList;
+    }
+
     public void clear_table() {
         SQLiteDatabase db = getWritableDatabase();
         try {
