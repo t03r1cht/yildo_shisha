@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/nav_group_start"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/ic_home_black_24dp"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_aboutUs"
+            android:icon="@mipmap/ic_announcement_black_24dp"
+            android:title="@string/nav_aboutUs" />
+
+    </group>
+
+    <group
+        android:id="@+id/nav_group_products"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_drinks"
+            android:icon="@mipmap/ic_local_drink_black_24dp"
+            android:title="@string/nav_drinks" />
+        <item
+            android:id="@+id/nav_smokes"
+            android:icon="@mipmap/ic_smoking_rooms_black_24dp"
+            android:title="@string/nav_smokes" />
+    </group>
+
+    <group
+        android:id="@+id/nav_group_legal"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_imprint"
+            android:icon="@mipmap/ic_account_balance_black_24dp"
+            android:title="@string/nav_imprint" />
+        <item
+            android:id="@+id/nav_aboutDev"
+            android:icon="@mipmap/ic_developer_mode_black_24dp"
+            android:title="@string/nav_aboutDev" />
+    </group>
+
+    <group
+        android:id="@+id/nav_group_exit"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@mipmap/ic_exit_to_app_black_24dp"
+            android:title="@string/nav_exit" />
+    </group>
+</menu>
