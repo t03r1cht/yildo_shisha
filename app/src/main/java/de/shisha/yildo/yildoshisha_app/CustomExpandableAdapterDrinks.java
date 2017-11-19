@@ -97,6 +97,7 @@ public class CustomExpandableAdapter extends BaseExpandableListAdapter {
                 .findViewById(R.id.group_header_tv);
         lblListHeader.setTypeface(null, Typeface.BOLD);
         lblListHeader.setText(headerTitle);
+        lblListHeader.setTextColor(_context.getResources().getColor(R.color.colorAccent));
 
         return convertView;
     }
@@ -110,5 +111,6 @@ public class CustomExpandableAdapter extends BaseExpandableListAdapter {
     public boolean isChildSelectable(int groupPosition, int childPosition) {
         return true;
     }
+
 
 }
