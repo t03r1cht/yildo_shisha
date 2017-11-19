@@ -39,12 +39,7 @@ public class DrinksActivity extends AppCompatActivity {
             ListView drinks_lv = (ListView) findViewById(R.id.soft_drinks_lv);
             drinks_lv.setDivider(null);
             drinks_lv.setDividerHeight(0);
-            drinks_lv.setOnTouchListener(new View.OnTouchListener() {
-                @Override
-                public boolean onTouch(View view, MotionEvent motionEvent) {
-                    return (motionEvent.getAction() == MotionEvent.ACTION_MOVE);
-                }
-            });
+
             drinks_lv.setAdapter(new CustomDrinksAdapter(this, getraenke_list));
         } catch (Exception e) {
             Log.e(LOG_TAG, "Error at setting adapter for typ_softgetraenke:\n" + e.toString());
