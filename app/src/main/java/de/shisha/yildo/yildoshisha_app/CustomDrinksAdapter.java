@@ -1,11 +1,9 @@
 package de.shisha.yildo.yildoshisha_app;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
@@ -17,11 +15,11 @@ import java.util.ArrayList;
 
 public class CustomDrinksAdapter extends BaseAdapter {
 
-    private static ArrayList<Getraenk> getraenkeList;
+    private static ArrayList<Product> getraenkeList;
 
     private LayoutInflater inflater;
 
-    public CustomDrinksAdapter(Context context, ArrayList<Getraenk> results) {
+    public CustomDrinksAdapter(Context context, ArrayList<Product> results) {
         this.getraenkeList = results;
         this.inflater = LayoutInflater.from(context);
     }

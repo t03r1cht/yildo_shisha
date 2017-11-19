@@ -14,7 +14,7 @@
     <string name="nav_aboutDev">Über die App</string>
     <string name="nav_exit">Verlassen</string>
     <string name="img_logo">Logo</string>
-    <string name="yildo_nav_bar_tv">ShishaBar<font color="green" size="30"><b>Yildo</b></font></string>
+    <string name="yildo_nav_bar_tv">ShishaBar<font color="#F5F5F5" size="30"><b>Yildo</b></font></string>
     <string name="yildo_main_tv">Shisha Bar Yildo</string>
     <string name="title_activity_about_us">AboutUsActivity</string>
 
@@ -24,7 +24,7 @@
 
     <!-- Getränke -->
     <string name="section_warme_getraenke">Warme Getränke</string>
-    <string name="section_soft_getraenke">Softgetränke</string>
+    <string name="section_soft_getraenke"><font color="#CDDC39">Softgetränke</font></string>
     <string name="section_saefte">Säfte</string>
     <string name="section_sekt">Sekt</string>
     <string name="section_bier">Bier</string>
@@ -129,7 +129,7 @@
     <string name="bie_becks_ice">Becks Ice</string>
     <string name="bie_pils_alkoholfrei">Pils alkoholfrei</string>
     <string name="bie_weizen_alkoholfrei">Weizen alkoholfrei</string>
-    
+
     <!-- Longdrinks -->
     <!-- Typ: typ_longdrinks -->
     <string name="typ_longdrinks">typ_longdrinks</string>
@@ -175,7 +175,7 @@
     <string name="cna_summer_time">Summer Time</string>
     <string name="cna_nix_drin">Nix Drin</string>
     <string name="cna_kiss_on_the_beach">Kiss on the Beach</string>
-    
+
     <!-- Cocktails (mit Alkohol) -->
     <!-- Typ: typ_cocktails_alkohol -->
     <string name="typ_cocktails_alkohol">typ_cocktails_alkohol</string>
@@ -194,20 +194,100 @@
     <string name="cwa_yildo_gruene_suende">YILDOs "Grüne Sünde"</string>
     <string name="cwa_long_island_ice_tea">Long Island Ice Tea</string>
 
+    <!-- Shisha -->
 
+    <string name="section_7days">7Days</string>
+    <string name="section_adalya">Adalya</string>
+    <string name="section_al_waha">Al Waha</string>
+    <string name="section_al_fakher">Al Fakher</string>
+    <string name="section_chillma">Chillma</string>
+    <string name="section_chaos">Chaos</string>
+    <string name="section_yildo">Yildo</string>
+    <string name="section_maridan_tobacco">Maridan Tobacco</string>
+    <string name="section_hasso">Hasso</string>
+    <string name="section_social_smoke">Social Smoke</string>
+    <string name="section_oscar">Oscar</string>
 
+    <!-- 7Days -->
+    <string name="typ_7days">typ_7days</string>
 
+    <string name="sda_cold_peach">Cold Peach</string>
+    <string name="sda_cold_melon">Cold Melon</string>
 
+    <!-- Adalya -->
+    <string name="typ_adalya">typ_adalya</string>
 
+    <string name="ada_love_66">Love 66</string>
+    <string name="ada_lady_killer">Lady Killer</string>
+    <string name="ada_hawai">Hawai</string>
 
+    <!-- Al-Waha -->
+    <string name="typ_al_waha">typ_al_waha</string>
 
+    <string name="alw_kaugummi_zimt">Kaugummi Zimt</string>
+    <string name="alw_hot_and_cold">Hot and Cold</string>
 
+    <!-- Al Fakher -->
+    <string name="typ_al_fakher">typ_al_fakher</string>
 
-    
-    
-    
-    
-    
-    
+    <string name="alf_doppel_apfel">Doppel Apfel</string>
+    <string name="alf_traube_minze">Traube Minze</string>
+
+    <!-- Chillma -->
+    <string name="typ_chillma">typ_chillma</string>
+
+    <string name="chi_persian_apple">Persian Apple</string>
+
+    <!-- Chaos -->
+    <string name="typ_chaos">typ_chaos</string>
+
+    <string name="cha_babylou">Babylou</string>
+    <string name="cha_oriental_cay">Oriental Cay</string>
+    <string name="cha_riddle">Riddle</string>
+    <string name="cha_wtf">WTF</string>
+    <string name="cha_crazy_gobline">Crazy Goblin</string>
+
+    <!-- Yildo -->
+    <string name="typ_yildo">typ_yildo</string>
+
+    <string name="yil_eisbonbon">Eisbonbon 2.0</string>
+
+    <!-- Maridan Tobacco -->
+    <string name="typ_maridan_tobacco">typ_maridan_tobacco</string>
+
+    <string name="mar_tingle_tangle">Tingle Tangle</string>
+
+    <!-- Hasso -->
+    <string name="typ_hasso">typ_hasso</string>
+
+    <string name="has_cherry_chito">Cherry Chito</string>
+    <string name="has_grape_addiction">Grape Addiction</string>
+    <string name="has_lemon_porn">Lemon Porn</string>
+
+    <!-- Social Smoke -->
+    <string name="typ_social_smoke">typ_social_smoke</string>
+
+    <string name="soc_lemon_chill">Lemon Chill</string>
+    <string name="soc_lemon_drop">Lemon Drop</string>
+    <string name="soc_pink_lemonade">Pink Lemonade</string>
+    <string name="soc_watermelon_chill">Watermelon Chill</string>
+    <string name="soc_wildberry_chill">Wildberry Chill</string>
+    <string name="soc_blue_raspberry">Blue Raspberry</string>
+    <string name="soc_baja_blue">Baja Blue</string>
+    <string name="soc_twisted">Twisted</string>
+    <string name="soc_pear_chill">Pear Chill</string>
+    <string name="soc_pistach_breeze">Pistach Breeze</string>
+    <string name="soc_voltage">Voltage</string>
+    <string name="soc_white_gummy_bear">White Gummy Bear</string>
+
+    <!-- Oscar -->
+    <string name="typ_oscar">typ_oscar</string>
+
+    <string name="osc_african_queen">African Queen</string>
+    <string name="osc_lime_light">Lime Light</string>
+    <string name="osc_dracula">Dracula</string>
+    <string name="osc_fame">Fame</string>
+    <string name="osc_cleopatra">Cleopatra</string>
+
 
 </resources>

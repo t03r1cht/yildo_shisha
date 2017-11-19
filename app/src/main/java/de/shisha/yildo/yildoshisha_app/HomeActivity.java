@@ -9,7 +9,10 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.SpannableString;
+import android.text.style.TextAppearanceSpan;
 import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
@@ -122,6 +125,17 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 this.startActivity(intent);
             } catch (Exception e) {
                 Log.e(LOG_TAG, "Caught exception when trying to switch intent to 'GetraenkeActivity'");
+                Log.e(LOG_TAG, e.toString());
+            }
+        } else if (id == R.id.nav_smokes) {
+            drawerLayout.closeDrawer(GravityCompat.START);
+            Log.d(LOG_TAG, "Clicked nav_smokes");
+
+            try {
+                Intent intent = new Intent(HomeActivity.this, ShishaActivity.class);
+                this.startActivity(intent);
+            } catch (Exception e) {
+                Log.e(LOG_TAG, "Caught exception when trying to switch intent to 'ShishaActivity'");
                 Log.e(LOG_TAG, e.toString());
             }
         } else if (id == R.id.nav_exit) {

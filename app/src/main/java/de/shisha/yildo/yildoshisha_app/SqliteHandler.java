@@ -51,7 +51,7 @@ public class SqliteHandler extends SQLiteOpenHelper {
     }
 
     // Neue Zeile zur Datenbank hinzufügen
-    public void add_getraenk(Getraenk g) {
+    public void add_product(Product g) {
         ContentValues values = new ContentValues();
         values.put(COLUMN_NAME, g.getName());
         values.put(COLUMN_PREIS, g.getPreis());
@@ -65,7 +65,7 @@ public class SqliteHandler extends SQLiteOpenHelper {
             db.close();
             Log.d(LOG_TAG, "added=" + g.getName() + " at " + getWritableDatabase().getPath());
         } catch (Exception e) {
-            Log.e(LOG_TAG, "Error at SqliteHandler#add_getraenk:\n" + e.toString());
+            Log.e(LOG_TAG, "Error at SqliteHandler#add_product:\n" + e.toString());
         }
     }
 
@@ -117,14 +117,14 @@ public class SqliteHandler extends SQLiteOpenHelper {
     }
 
 
-    public List<Getraenk> get_item_list() {
-        List<Getraenk> gList = new ArrayList<Getraenk>();
+    public List<Product> get_item_list() {
+        List<Product> gList = new ArrayList<Product>();
         String selectQuery = "SELECT * FROM " + TABLE_GETRAENKE;
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);
         if (cursor.moveToFirst()) {
             do {
-                Getraenk g = new Getraenk();
+                Product g = new Product();
                 g.set_id(Integer.parseInt(cursor.getString(0)));
                 g.setName(cursor.getString(1));
                 g.setPreis(cursor.getDouble(2));
@@ -134,14 +134,14 @@ public class SqliteHandler extends SQLiteOpenHelper {
         return gList;
     }
 
-    public ArrayList<Getraenk> get_item_list2() {
-        ArrayList<Getraenk> gList = new ArrayList<Getraenk>();
+    public ArrayList<Product> get_item_list2() {
+        ArrayList<Product> gList = new ArrayList<Product>();
         String selectQuery = "SELECT * FROM " + TABLE_GETRAENKE;
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);
         if (cursor.moveToFirst()) {
             do {
-                Getraenk g = new Getraenk();
+                Product g = new Product();
                 g.set_id(Integer.parseInt(cursor.getString(0)));
                 g.setName(cursor.getString(1));
                 g.setPreis(cursor.getDouble(2));
@@ -175,14 +175,14 @@ public class SqliteHandler extends SQLiteOpenHelper {
         db.close();
     }
 
-    public ArrayList<Getraenk> get_getraenke_by_typ(String typ) {
-        ArrayList<Getraenk> gList = new ArrayList<Getraenk>();
+    public ArrayList<Product> get_product_by_type(String typ) {
+        ArrayList<Product> gList = new ArrayList<Product>();
         String selectQuery = "SELECT * FROM " + TABLE_GETRAENKE + " WHERE typ=\"" + typ + "\"";
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);
         if (cursor.moveToFirst()) {
             do {
-                Getraenk g = new Getraenk();
+                Product g = new Product();
                 g.set_id(Integer.parseInt(cursor.getString(0)));
                 g.setName(cursor.getString(1));
                 g.setPreis(cursor.getDouble(2));

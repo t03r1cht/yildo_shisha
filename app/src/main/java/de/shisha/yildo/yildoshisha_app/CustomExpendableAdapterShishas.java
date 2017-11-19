@@ -15,14 +15,14 @@ import java.util.List;
  * Created by Marc on 19.11.2017.
  */
 
-public class CustomExpandableAdapterDrinks extends BaseExpandableListAdapter {
+public class CustomExpendableAdapterShishas extends BaseExpandableListAdapter {
 
     private Context _context;
     private List<String> _listDataHeader; // header titles
     // child data in format of header title, child title
     private HashMap<String, List<Product>> _listDataChild;
 
-    public CustomExpandableAdapterDrinks(Context context, List<String> listDataHeader,
+    public CustomExpendableAdapterShishas(Context context, List<String> listDataHeader,
                                          HashMap<String, List<Product>> listChildData) {
         this._context = context;
         this._listDataHeader = listDataHeader;
@@ -111,6 +111,4 @@ public class CustomExpandableAdapterDrinks extends BaseExpandableListAdapter {
     public boolean isChildSelectable(int groupPosition, int childPosition) {
         return true;
     }
-
-
 }

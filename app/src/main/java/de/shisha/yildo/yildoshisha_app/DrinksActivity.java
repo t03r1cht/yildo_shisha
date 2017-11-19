@@ -4,14 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
-import android.view.MotionEvent;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
-import android.widget.ListAdapter;
-import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -24,7 +17,7 @@ public class DrinksActivity extends AppCompatActivity {
     private SqliteHandler db_handler;
 
     List<String> listDataHeader;
-    HashMap<String, List<Getraenk>> listDataChild;
+    HashMap<String, List<Product>> listDataChild;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +29,7 @@ public class DrinksActivity extends AppCompatActivity {
         db_handler = new SqliteHandler(this, null, null, 1);
 
         try {
-//            ArrayList<Getraenk> getraenke_list = db_handler.get_getraenke_by_typ(getResources().getString(R.string.typ_softgetraenke));
+//            ArrayList<Product> getraenke_list = db_handler.get_product_by_type(getResources().getString(R.string.typ_softgetraenke));
 //            Log.d(LOG_TAG, "soft_drinks: list=" + getraenke_list.size());
 
 //            ListView drinks_lv = (ListView) findViewById(R.id.soft_drinks_lv);
@@ -46,47 +39,47 @@ public class DrinksActivity extends AppCompatActivity {
 //            drinks_lv.setAdapter(new CustomDrinksAdapter(this, getraenke_list));
 
             listDataHeader = new ArrayList<String>();
-            listDataChild = new HashMap<String, List<Getraenk>>();
+            listDataChild = new HashMap<String, List<Product>>();
 
             // Softdrinks
             listDataHeader.add(getResources().getString(R.string.section_soft_getraenke));
-            List<Getraenk> soft_drink_list = db_handler.get_getraenke_by_typ(getResources().getString(R.string.typ_softgetraenke));
+            List<Product> soft_drink_list = db_handler.get_product_by_type(getResources().getString(R.string.typ_softgetraenke));
 
             // Säfte
             listDataHeader.add(getResources().getString(R.string.section_saefte));
-            List<Getraenk> saft_drink_list = db_handler.get_getraenke_by_typ(getResources().getString(R.string.typ_saefte));
+            List<Product> saft_drink_list = db_handler.get_product_by_type(getResources().getString(R.string.typ_saefte));
 
             // Bier
             listDataHeader.add(getResources().getString(R.string.section_bier));
-            List<Getraenk> bier_drink_list = db_handler.get_getraenke_by_typ(getResources().getString(R.string.typ_bier));
+            List<Product> bier_drink_list = db_handler.get_product_by_type(getResources().getString(R.string.typ_bier));
 
             // Wein
             listDataHeader.add(getResources().getString(R.string.section_wein));
-            List<Getraenk> wein_drink_list = db_handler.get_getraenke_by_typ(getResources().getString(R.string.typ_wein));
+            List<Product> wein_drink_list = db_handler.get_product_by_type(getResources().getString(R.string.typ_wein));
 
             // Longdrinks
             listDataHeader.add(getResources().getString(R.string.section_longdrinks));
-            List<Getraenk> long_drink_list = db_handler.get_getraenke_by_typ(getResources().getString(R.string.typ_longdrinks));
+            List<Product> long_drink_list = db_handler.get_product_by_type(getResources().getString(R.string.typ_longdrinks));
 
             // Cocktails mit Alkohol
             listDataHeader.add(getResources().getString(R.string.section_cocktails));
-            List<Getraenk> cocktail_drink_list = db_handler.get_getraenke_by_typ(getResources().getString(R.string.typ_cocktails_alkohol));
+            List<Product> cocktail_drink_list = db_handler.get_product_by_type(getResources().getString(R.string.typ_cocktails_alkohol));
 
             // Cocktails ohne Alkohol
             listDataHeader.add(getResources().getString(R.string.section_coktails_alkoholfrei));
-            List<Getraenk> cocktail_alkoholfrei_drink_list = db_handler.get_getraenke_by_typ(getResources().getString(R.string.typ_cocktails_alkoholfrei));
+            List<Product> cocktail_alkoholfrei_drink_list = db_handler.get_product_by_type(getResources().getString(R.string.typ_cocktails_alkoholfrei));
 
             // Shots
             listDataHeader.add(getResources().getString(R.string.section_shots));
-            List<Getraenk> shots_drink_list = db_handler.get_getraenke_by_typ(getResources().getString(R.string.typ_shots));
+            List<Product> shots_drink_list = db_handler.get_product_by_type(getResources().getString(R.string.typ_shots));
 
             // Sekt
             listDataHeader.add(getResources().getString(R.string.section_sekt));
-            List<Getraenk> sekt_drink_list = db_handler.get_getraenke_by_typ(getResources().getString(R.string.typ_sekt));
+            List<Product> sekt_drink_list = db_handler.get_product_by_type(getResources().getString(R.string.typ_sekt));
 
             // Warme Getränke
             listDataHeader.add(getResources().getString(R.string.section_warme_getraenke));
-            List<Getraenk> warme_getraenke_drink_list = db_handler.get_getraenke_by_typ(getResources().getString(R.string.typ_warme_getraenke));
+            List<Product> warme_getraenke_drink_list = db_handler.get_product_by_type(getResources().getString(R.string.typ_warme_getraenke));
 
 
             listDataChild.put(listDataHeader.get(0), soft_drink_list);
@@ -104,7 +97,10 @@ public class DrinksActivity extends AppCompatActivity {
             ExpandableListView exp_lv = (ExpandableListView) findViewById(R.id.lvExp);
             exp_lv.setDivider(null);
             exp_lv.setDividerHeight(0);
-            exp_lv.setAdapter(new CustomExpandableAdapter(this, listDataHeader, listDataChild));
+            exp_lv.setAdapter(new CustomExpandableAdapterDrinks(this, listDataHeader, listDataChild));
+            for (int i = 0; i < 10; i++) {
+                exp_lv.expandGroup(i);
+            }
 
 
         } catch (
@@ -119,7 +115,7 @@ public class DrinksActivity extends AppCompatActivity {
 
     private void prepareListData() {
         listDataHeader = new ArrayList<String>();
-        listDataChild = new HashMap<String, List<Getraenk>>();
+        listDataChild = new HashMap<String, List<Product>>();
 
         // Adding child data
         listDataHeader.add("Top 250");

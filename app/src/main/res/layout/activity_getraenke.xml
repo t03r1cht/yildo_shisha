@@ -49,6 +49,12 @@
                     android:layout_height="wrap_content"
                     android:text="Placeholder" />
 
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/popup_button"
+                    android:text="Popup"/>
+
             </LinearLayout>
 
         </ScrollView>

@@ -1,18 +1,18 @@
 package de.shisha.yildo.yildoshisha_app;
 
 
-public class Getraenk {
+public class Product {
 
     private int _id;
     private String name;
     private double preis;
     private String typ;
 
-    public Getraenk() {
+    public Product() {
 
     }
 
-    public Getraenk(String name, double preis, String typ) {
+    public Product(String name, double preis, String typ) {
         this.name = name;
         this.preis = preis;
         this.typ = typ;

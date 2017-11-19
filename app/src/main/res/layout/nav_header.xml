@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/colorAccent"
     tools:layout_height="140dp">
 
     <TextView
@@ -16,7 +16,7 @@
         android:paddingBottom="80px"
         android:paddingTop="80px"
         android:text="@string/yildo_nav_bar_tv"
-        android:textColor="#d9d9d9"
+        android:textColor="@color/lightPrimaryColor"
         android:textSize="75px" />
 
 
