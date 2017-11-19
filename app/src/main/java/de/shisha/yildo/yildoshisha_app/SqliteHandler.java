@@ -16,12 +16,13 @@ public class SqliteHandler extends SQLiteOpenHelper {
     private static String LOG_TAG = "Yildo";
 
     // Jedes Mal, wenn die Datenbank z.B. mit neuen Spalten aktualisiert wird, muss die Version auch aktualisiert werden
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 4;
     private static final String DATABASE_NAME = "yildo_db_getraenke.db";
     public static final String TABLE_GETRAENKE = "getraenke";
     public static final String COLUMN_ID = "_id";
     public static final String COLUMN_NAME = "name";
     public static final String COLUMN_PREIS = "preis";
+    public static final String COLUMN_TYP = "typ";
 
     public SqliteHandler(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, DATABASE_NAME, factory, DATABASE_VERSION);
@@ -32,7 +33,8 @@ public class SqliteHandler extends SQLiteOpenHelper {
         String query = "CREATE TABLE " + TABLE_GETRAENKE + "("
                 + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + COLUMN_NAME + " TEXT, "
-                + COLUMN_PREIS + " REAL"
+                + COLUMN_PREIS + " REAL, "
+                + COLUMN_TYP + " TEXT"
                 + ")";
 
         sqLiteDatabase.execSQL(query);
@@ -42,6 +44,10 @@ public class SqliteHandler extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TABLE_GETRAENKE);
         onCreate(sqLiteDatabase);
+
+//        if(i1 > i) {
+//            sqLiteDatabase.execSQL("ALTER TABLE " + TABLE_GETRAENKE + " ADD COLUMN typ TEXT");
+//        }
     }
 
     // Neue Zeile zur Datenbank hinzufügen
@@ -49,6 +55,7 @@ public class SqliteHandler extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put(COLUMN_NAME, g.getName());
         values.put(COLUMN_PREIS, g.getPreis());
+        values.put(COLUMN_TYP, g.getTyp());
 
         SQLiteDatabase db = null;
         try {
@@ -56,7 +63,7 @@ public class SqliteHandler extends SQLiteOpenHelper {
 
             db.insert(TABLE_GETRAENKE, null, values);
             db.close();
-            Log.e(LOG_TAG, "added=" + g.getName() + " at " + getWritableDatabase().getPath());
+            Log.d(LOG_TAG, "added=" + g.getName() + " at " + getWritableDatabase().getPath());
         } catch (Exception e) {
             Log.e(LOG_TAG, "Error at SqliteHandler#add_getraenk:\n" + e.toString());
         }
@@ -166,6 +173,23 @@ public class SqliteHandler extends SQLiteOpenHelper {
             Log.e(LOG_TAG, "Error at SqliteHandler#clear_table:\n" + e.toString());
         }
         db.close();
+    }
+
+    public ArrayList<Getraenk> get_getraenke_by_typ(String typ) {
+        ArrayList<Getraenk> gList = new ArrayList<Getraenk>();
+        String selectQuery = "SELECT * FROM " + TABLE_GETRAENKE + " WHERE typ=\"" + typ + "\"";
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+        if (cursor.moveToFirst()) {
+            do {
+                Getraenk g = new Getraenk();
+                g.set_id(Integer.parseInt(cursor.getString(0)));
+                g.setName(cursor.getString(1));
+                g.setPreis(cursor.getDouble(2));
+                gList.add(g);
+            } while (cursor.moveToNext());
+        }
+        return gList;
     }
 
 }

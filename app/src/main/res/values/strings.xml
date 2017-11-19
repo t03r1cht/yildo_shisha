@@ -14,7 +14,7 @@
     <string name="nav_aboutDev">Über die App</string>
     <string name="nav_exit">Verlassen</string>
     <string name="img_logo">Logo</string>
-    <string name="yildo_nav_bar_tv">ShishaBar<font size="30" color="green"><b>Yildo</b></font></string>
+    <string name="yildo_nav_bar_tv">ShishaBar<font color="green" size="30"><b>Yildo</b></font></string>
     <string name="yildo_main_tv">Shisha Bar Yildo</string>
     <string name="title_activity_about_us">AboutUsActivity</string>
 
@@ -24,11 +24,177 @@
 
     <!-- Getränke -->
     <string name="section_warme_getraenke">Warme Getränke</string>
-    <string name="section_soft_getraenke">Soft Getränke</string>
+    <string name="section_soft_getraenke">Softgetränke</string>
     <string name="section_saefte">Säfte</string>
     <string name="section_sekt">Sekt</string>
     <string name="section_bier">Bier</string>
     <string name="section_wein">Wein</string>
     <string name="section_longdrinks">Longdrinks</string>
+
+    <!-- Warme Getränke -->
+    <!-- Typ: typ_warme_getraenke -->
+    <string name="typ_warme_getraenke">typ_warme_getraenke</string>
+
+    <string name="war_kaffee_klein">Kaffee klein</string>
+    <string name="war_kaffee_groß">Kaffee groß</string>
+    <string name="war_espresso">Espresso</string>
+    <string name="war_espresso_doppelt">Espresso doppelt</string>
+    <string name="war_cappuccino">Cappuccino</string>
+    <string name="war_latte_macchiato">Latte macchiato</string>
+    <string name="war_milchkaffee">Milchkaffee</string>
+    <string name="war_kakao">Kakao</string>
+    <string name="war_tee">Tee (versch. Sorten)</string>
+
+    <!-- Softgetränke -->
+    <!-- Typ: typ_softgetraenke -->
+    <!-- Cola, Fanta, Spezi und Sprite in 0,2 L Flaschen -->
+    <string name="typ_softgetraenke">typ_softgetraenke</string>
+
+    <string name="sof_coca_cola">Coca Cola</string>
+    <string name="sof_fanta">Fanta</string>
+    <string name="sof_spezi">Spezi</string>
+    <string name="sof_sprite">Sprite</string>
+    <string name="sof_mineralwasser_klein">Mineralwasser klein</string>
+    <string name="sof_mineralwasser_groß">Mineralwasser groß</string>
+    <string name="sof_red_bull">Red Bull</string>
+    <string name="sof_red_bull_zero">Red Bull Zero</string>
+    <string name="sof_tonic_water">Tonic Water</string>
+    <string name="sof_bitter_lemon">Bitter Lemon</string>
+    <string name="sof_ginger_ale">Ginger Ale</string>
+    <string name="sof_schweppes_russian_wild_berry">Schweppes Russian Wild Berry</string>
+    <string name="sof_eistee_pfirsich">Eistee Pfirsich</string>
+    <string name="sof_eistee_granatapfel">Eistee Granatapfel</string>
+    <string name="sof_eistee_zitrone">Eistee Zitrone</string>
+    <string name="sof_orangina_rot">Orangina rot</string>
+    <string name="sof_orangina_gelb">Orangina gelb</string>
+    <string name="sof_moloko">Moloko</string>
+    <string name="sof_28black">28 Black</string>
+
+    <!-- Säfte -->
+    <!-- Typ: typ_saefte -->
+    <string name="typ_saefte">typ_saefte</string>
+
+    <string name="sae_apfelsaft">Apfelsaft</string>
+    <string name="sae_orangensaft">Orangensaft</string>
+    <string name="sae_ananassaft">Ananassaft</string>
+    <string name="sae_bananensaft">Bananensaft</string>
+    <string name="sae_maracujasaft">Maracujasaft</string>
+    <string name="sae_cranberrysaft">Cranberrysaft</string>
+
+    <!-- Sekt -->
+    <!-- Typ: typ_sekt -->
+    <string name="typ_sekt">typ_sekt</string>
+
+    <string name="sek_sekt">Sekt</string>
+    <string name="sek_sekt_orange">Sekt Orange</string>
+    <string name="sek_hugo">Hugo</string>
+    <string name="sek_aperol_spritz">Aperol Spritz</string>
+
+    <!-- Wein -->
+    <!-- Typ: typ_wein -->
+    <string name="typ_wein">typ_wein</string>
+
+    <string name="wei_rotwein">Rotwein</string>
+    <string name="wei_weißwein">Weißwein</string>
+    <string name="wei_rose">Rosé</string>
+    <string name="wei_weinschorle">Weinschorle</string>
+
+    <!-- Bier -->
+    <!-- Typ: typ_bier -->
+    <string name="typ_bier">typ_bier</string>
+
+    <string name="bie_pils">Pils</string>
+    <string name="bie_donauradler">Donauradler</string>
+    <string name="bie_hefeweizen">Hefeweizen</string>
+    <string name="bie_colaweizen">Colaweizen</string>
+    <string name="bie_saftweizen">Saftweizen</string>
+    <string name="bie_desperados">Desperados</string>
+    <string name="bie_corona">Corona</string>
+    <string name="bie_heineken">Heineken</string>
+    <string name="bie_becks">Becks</string>
+    <string name="bie_becks_green_lemon">Becks Green Lemon</string>
+    <string name="bie_becks_ice">Becks Ice</string>
+    <string name="bie_pils_alkoholfrei">Pils alkoholfrei</string>
+    <string name="bie_weizen_alkoholfrei">Weizen alkoholfrei</string>
+    
+    <!-- Longdrinks -->
+    <!-- Typ: typ_longdrinks -->
+    <string name="typ_longdrinks">typ_longdrinks</string>
+
+    <string name="lon_vodka_bull">Vodka Bull</string>
+    <string name="lon_vodka_lemon">Vodka Lemon</string>
+    <string name="lon_jacky_cola">Jacky Cola</string>
+    <string name="lon_gin_tonic">Gin Tonic</string>
+    <string name="lon_jaeger_bull">Jäger Bull</string>
+    <string name="lon_jaeger_kirsch">Jäger Kirsch</string>
+    <string name="lon_malibu_kirsch">Malibu Kirsch</string>
+    <string name="lon_malibu_maracuja">Malibu Maracuja</string>
+    <string name="lon_cuba_libre">Cuba Libre</string>
+    <string name="lon_bacardi_cola">Bacardi Cola</string>
+    <string name="lon_bacardi_orange">Bacardi Orange</string>
+    <string name="lon_blanco_43">Blanco 43</string>
+    <string name="lon_maracuja_43">Maracuja 43</string>
+    <string name="lon_tropic_43">Tropic 43</string>
+
+    <!-- Shots -->
+    <!-- Typ: typ_shots -->
+    <string name="typ_shots">typ_shots</string>
+
+    <string name="sho_vodka">Vodka</string>
+    <string name="sho_tequila_gold">Tequila Gold</string>
+    <string name="sho_tequila_silber">Tequila Silver</string>
+    <string name="sho_dos_mas">Dos Mas</string>
+    <string name="sho_jaegermeister">Jägermeister</string>
+    <string name="sho_jack_daniels">Jack Daniels</string>
+    <string name="sho_ficken">Ficken</string>
+    <string name="sho_baileys">Baileys</string>
+    <string name="sho_sambuca">Sambuca</string>
+
+    <!-- Cocktails (alkoholfrei) -->
+    <!-- Typ: typ_cocktails_alkoholfrei -->
+    <string name="typ_cocktails_alkoholfrei">typ_cocktails_alkoholfrei</string>
+
+    <string name="cna_virgin_mojito">Virgin Mojito</string>
+    <string name="cna_virgin_colada">Virgin Colada</string>
+    <string name="cna_ipanema">Ipanema</string>
+    <string name="cna_dulcinea">Dulcinea</string>
+    <string name="cna_coconut_kiss">Coconut Kiss</string>
+    <string name="cna_summer_time">Summer Time</string>
+    <string name="cna_nix_drin">Nix Drin</string>
+    <string name="cna_kiss_on_the_beach">Kiss on the Beach</string>
+    
+    <!-- Cocktails (mit Alkohol) -->
+    <!-- Typ: typ_cocktails_alkohol -->
+    <string name="typ_cocktails_alkohol">typ_cocktails_alkohol</string>
+
+    <string name="cwa_caipirinha">Caipirinha</string>
+    <string name="cwa_mojito">Mojito</string>
+    <string name="cwa_sex_on_the_beach">Sex on the Beach</string>
+    <string name="cwa_tequila_sunrise">Tequila Sunrise</string>
+    <string name="cwa_malibu_sunrise">Malibu Sunrise</string>
+    <string name="cwa_kingston">Kingston</string>
+    <string name="cwa_pina_colada">Pina Colada</string>
+    <string name="cwa_moonlight_shadow">Moonlight Shadow</string>
+    <string name="cwa_bols_blue_ocean">BOLS Blue Ocean</string>
+    <string name="cwa_swimming_pool">Swimming Pool</string>
+    <string name="cwa_thats_life">That\'s Life</string>
+    <string name="cwa_yildo_gruene_suende">YILDOs "Grüne Sünde"</string>
+    <string name="cwa_long_island_ice_tea">Long Island Ice Tea</string>
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
 
 </resources>

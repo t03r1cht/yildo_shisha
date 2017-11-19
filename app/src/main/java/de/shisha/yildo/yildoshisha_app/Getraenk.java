@@ -6,14 +6,16 @@ public class Getraenk {
     private int _id;
     private String name;
     private double preis;
+    private String typ;
 
     public Getraenk() {
 
     }
 
-    public Getraenk(String name, double preis) {
+    public Getraenk(String name, double preis, String typ) {
         this.name = name;
         this.preis = preis;
+        this.typ = typ;
     }
 
     public void set_id(int _id) {
@@ -38,5 +40,13 @@ public class Getraenk {
 
     public double getPreis() {
         return preis;
+    }
+
+    public String getTyp() {
+        return typ;
+    }
+
+    public void setTyp(String typ) {
+        this.typ = typ;
     }
 }

@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.MotionEvent;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -26,34 +28,26 @@ public class DrinksActivity extends AppCompatActivity {
 
         db_handler = new SqliteHandler(this, null, null, 1);
 
-        // Vorbereitung der Daten für ListView und Adapter
-//        List<String> getraenke_list = db_handler.get_item_name_list();
-//        int item_count = getraenke_list.size();
-//        String[] getraenke = new String[item_count];
-//
-//        getraenke = getraenke_list.toArray(getraenke);
-//
-//        Log.e(LOG_TAG, "list=" + getraenke_list.size() + " list_string=" + getraenke.length);
-//
-//        try {
-//            ListAdapter g_adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, getraenke);
-//            ListView drinks_lv = (ListView) findViewById(R.id.drinks_lv);
-//            drinks_lv.setAdapter(g_adapter);
-//        } catch (Exception e) {
-//            Log.e(LOG_TAG, "Error at setting adapter:\n" + e.toString());
-//        }
+        //ArrayList<Getraenk> getraenke_list = db_handler.get_item_list2();
 
 
-        ArrayList<Getraenk> getraenke_list = db_handler.get_item_list2();
-        int item_count = getraenke_list.size();
-
-        Log.e(LOG_TAG, "list=" + getraenke_list.size());
-
+        // Softdrinks
         try {
-            ListView drinks_lv = (ListView) findViewById(R.id.drinks_lv);
+            ArrayList<Getraenk> getraenke_list = db_handler.get_getraenke_by_typ(getResources().getString(R.string.typ_softgetraenke));
+            Log.d(LOG_TAG, "soft_drinks: list=" + getraenke_list.size());
+
+            ListView drinks_lv = (ListView) findViewById(R.id.soft_drinks_lv);
+            drinks_lv.setDivider(null);
+            drinks_lv.setDividerHeight(0);
+            drinks_lv.setOnTouchListener(new View.OnTouchListener() {
+                @Override
+                public boolean onTouch(View view, MotionEvent motionEvent) {
+                    return (motionEvent.getAction() == MotionEvent.ACTION_MOVE);
+                }
+            });
             drinks_lv.setAdapter(new CustomDrinksAdapter(this, getraenke_list));
         } catch (Exception e) {
-            Log.e(LOG_TAG, "Error at setting adapter:\n" + e.toString());
+            Log.e(LOG_TAG, "Error at setting adapter for typ_softgetraenke:\n" + e.toString());
         }
 
 

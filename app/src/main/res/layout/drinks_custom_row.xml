@@ -8,6 +8,7 @@
         android:id="@+id/drink_item_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:maxLength="30"
         android:paddingLeft="40px"
         android:paddingTop="20px"
         android:text="aaa"

@@ -76,13 +76,13 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
         if (id == R.id.nav_home) {
             drawerLayout.closeDrawer(GravityCompat.START);
-            Log.e(LOG_TAG, "Clicked nav_home");
+            Log.d(LOG_TAG, "Clicked nav_home");
             Intent intent = new Intent(HomeActivity.this, HomeActivity.class);
             this.startActivity(intent);
-            Log.e(LOG_TAG, "Switched to intent 'HomeActivity'");
+            Log.d(LOG_TAG, "Switched to intent 'HomeActivity'");
         } else if (id == R.id.nav_aboutUs) {
             drawerLayout.closeDrawer(GravityCompat.START);
-            Log.e(LOG_TAG, "Clicked nav_aboutUs");
+            Log.d(LOG_TAG, "Clicked nav_aboutUs");
 
             try {
                 Intent intent = new Intent(HomeActivity.this, AboutUsActivity.class);
@@ -93,7 +93,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             }
         } else if (id == R.id.nav_drinks) {
             drawerLayout.closeDrawer(GravityCompat.START);
-            Log.e(LOG_TAG, "Clicked nav_drinks");
+            Log.d(LOG_TAG, "Clicked nav_drinks");
 
             try {
                 Intent intent = new Intent(HomeActivity.this, DrinksActivity.class);
@@ -104,7 +104,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             }
         } else if (id == R.id.nav_news) {
             drawerLayout.closeDrawer(GravityCompat.START);
-            Log.e(LOG_TAG, "Clicked nav_news");
+            Log.d(LOG_TAG, "Clicked nav_news");
 
             try {
                 Intent intent = new Intent(HomeActivity.this, NewsActivity.class);
@@ -115,7 +115,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             }
         } else if (id == R.id.nav_database) {
             drawerLayout.closeDrawer(GravityCompat.START);
-            Log.e(LOG_TAG, "Clicked nav_database");
+            Log.d(LOG_TAG, "Clicked nav_database");
 
             try {
                 Intent intent = new Intent(HomeActivity.this, GetraenkeActivity.class);
@@ -126,7 +126,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             }
         } else if (id == R.id.nav_exit) {
             drawerLayout.closeDrawer(GravityCompat.START);
-            Log.e(LOG_TAG, "Clicked nav_exit");
+            Log.d(LOG_TAG, "Clicked nav_exit");
             finish();
             System.exit(0);
         }
