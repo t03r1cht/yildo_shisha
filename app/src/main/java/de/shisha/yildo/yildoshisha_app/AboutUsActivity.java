@@ -43,7 +43,7 @@ public class AboutUsActivity extends AppCompatActivity {
 
         try {
             tf_raleway = Typeface.createFromAsset(getAssets(), "fonts/Raleway-Regular.ttf");
-            title_tv.setTypeface(tf_raleway);
+            //title_tv.setTypeface(tf_raleway);
             //about_us_content.setTypeface(tf_raleway);
 
         } catch (Exception e) {

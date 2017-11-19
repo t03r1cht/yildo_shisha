@@ -12,7 +12,7 @@
         android:paddingTop="20px"
         android:text="aaa"
         android:textColor="#212121"
-        android:textSize="21sp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/drink_item_preis"
@@ -27,6 +27,6 @@
         android:paddingTop="5px"
         android:text="www"
         android:textColor="#757575"
-        android:textSize="16sp" />
+        android:textSize="13sp" />
 
 </RelativeLayout>

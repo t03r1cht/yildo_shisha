@@ -14,12 +14,21 @@
     <string name="nav_aboutDev">Über die App</string>
     <string name="nav_exit">Verlassen</string>
     <string name="img_logo">Logo</string>
-    <string name="yildo_nav_bar_tv">ShishaBar<font size="30"><b>Yildo</b></font></string>
+    <string name="yildo_nav_bar_tv">ShishaBar<font size="30" color="green"><b>Yildo</b></font></string>
     <string name="yildo_main_tv">Shisha Bar Yildo</string>
     <string name="title_activity_about_us">AboutUsActivity</string>
 
     <!-- About us Content -->
     <string name="aboutus_title">Über uns</string>
     <string name="aboutus_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</string>
+
+    <!-- Getränke -->
+    <string name="section_warme_getraenke">Warme Getränke</string>
+    <string name="section_soft_getraenke">Soft Getränke</string>
+    <string name="section_saefte">Säfte</string>
+    <string name="section_sekt">Sekt</string>
+    <string name="section_bier">Bier</string>
+    <string name="section_wein">Wein</string>
+    <string name="section_longdrinks">Longdrinks</string>
 
 </resources>
