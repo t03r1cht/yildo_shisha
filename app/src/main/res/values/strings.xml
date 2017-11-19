@@ -30,6 +30,9 @@
     <string name="section_bier">Bier</string>
     <string name="section_wein">Wein</string>
     <string name="section_longdrinks">Longdrinks</string>
+    <string name="section_shots">Shots</string>
+    <string name="section_coktails_alkoholfrei">Alkoholfreie Cocktails</string>
+    <string name="section_cocktails">Cocktails</string>
 
     <!-- Warme Getränke -->
     <!-- Typ: typ_warme_getraenke -->
@@ -74,12 +77,22 @@
     <!-- Typ: typ_saefte -->
     <string name="typ_saefte">typ_saefte</string>
 
-    <string name="sae_apfelsaft">Apfelsaft</string>
-    <string name="sae_orangensaft">Orangensaft</string>
-    <string name="sae_ananassaft">Ananassaft</string>
-    <string name="sae_bananensaft">Bananensaft</string>
-    <string name="sae_maracujasaft">Maracujasaft</string>
-    <string name="sae_cranberrysaft">Cranberrysaft</string>
+    <string name="sae_apfelsaft_1">Apfelsaft (0,3 l)</string>
+    <string name="sae_apfelsaft_2">Apfelsaftschorle (0,3 l)</string>
+    <string name="sae_orangensaft_1">Orangensaft (0,3 l)</string>
+    <string name="sae_orangensaft_2">Orangensaftschorle (0,3 l)</string>
+    <string name="sae_ananassaft_1">Ananassaft (0,3 l)</string>
+    <string name="sae_ananassaft_2">Ananassaftschorle (0,3 l)</string>
+    <string name="sae_kirschsaft_1">Kirschsaft (0,3 l)</string>
+    <string name="sae_kirschsaft_2">Kirschsaftschorle (0,3 l)</string>
+    <string name="sae_bananensaft_1">Bananensaft (0,3 l)</string>
+    <string name="sae_bananensaft_2">Bananensaftschorle (0,3 l)</string>
+    <string name="sae_maracujasaft_1">Maracujasaft (0,3 l)</string>
+    <string name="sae_maracujasaft_2">Maracujasaftschorle (0,3 l)</string>
+    <string name="sae_cranberrysaft_1">Cranberrysaft (0,3 l)</string>
+    <string name="sae_cranberrysaft_2">Cranberrysaftschorle (0,3 l)</string>
+    <string name="sae_kiba_1">KiBa (0,3 l)</string>
+    <string name="sae_kiba_2">KiBa-Schorle (0,3 l)</string>
 
     <!-- Sekt -->
     <!-- Typ: typ_sekt -->
