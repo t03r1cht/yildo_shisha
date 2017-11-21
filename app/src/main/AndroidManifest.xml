@@ -25,7 +25,8 @@
         <activity android:name=".GetraenkeActivity" />
         <activity android:name=".NewsActivity" />
         <activity android:name=".DrinksActivity" />
-        <activity android:name=".ShishaActivity"></activity>
+        <activity android:name=".ShishaActivity" />
+        <activity android:name=".AboutAppActivity"></activity>
     </application>
 
 </manifest>

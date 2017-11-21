@@ -36,7 +36,7 @@ public class DrinksActivity extends AppCompatActivity {
 //            drinks_lv.setDivider(null);
 //            drinks_lv.setDividerHeight(0);
 //
-//            drinks_lv.setAdapter(new CustomDrinksAdapter(this, getraenke_list));
+//            drinks_lv.setAdapter(new CustomNewsAdapter(this, getraenke_list));
 
             listDataHeader = new ArrayList<String>();
             listDataChild = new HashMap<String, List<Product>>();

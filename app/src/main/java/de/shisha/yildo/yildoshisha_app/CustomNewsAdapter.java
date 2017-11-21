@@ -13,23 +13,24 @@ import java.util.ArrayList;
  * Created by Marc on 16.11.2017.
  */
 
-public class CustomDrinksAdapter extends BaseAdapter {
+public class CustomNewsAdapter extends BaseAdapter {
 
     private static ArrayList<Product> getraenkeList;
+    private static ArrayList<News> newsList;
 
     private LayoutInflater inflater;
 
-    public CustomDrinksAdapter(Context context, ArrayList<Product> results) {
-        this.getraenkeList = results;
+    public CustomNewsAdapter(Context context, ArrayList<News> newsList) {
+        this.newsList = newsList;
         this.inflater = LayoutInflater.from(context);
     }
 
     public int getCount() {
-        return this.getraenkeList.size();
+        return this.newsList.size();
     }
 
     public Object getItem(int pos) {
-        return getraenkeList.get(pos);
+        return newsList.get(pos);
     }
 
     public long getItemId(int pos) {
@@ -39,27 +40,25 @@ public class CustomDrinksAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
         if (convertView == null) {
-            convertView = inflater.inflate(R.layout.drinks_custom_row, null);
+            convertView = inflater.inflate(R.layout.news_custom_row, null);
             holder = new ViewHolder();
-            holder.drink_item_name = (TextView) convertView.findViewById(R.id.drink_item_name);
-            holder.drink_item_preis = (TextView) convertView.findViewById(R.id.drink_item_preis);
+            holder.news_item_name = (TextView) convertView.findViewById(R.id.news_title_tv);
+            holder.news_item_text = (TextView) convertView.findViewById(R.id.news_text_tv);
 
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
 
-        holder.drink_item_name.setText(getraenkeList.get(position).getName());
-        // Formatiere Float zu x.xx
-        double preis = getraenkeList.get(position).getPreis();
-        holder.drink_item_preis.setText(String.format("%.2f", preis) + " €");
+        holder.news_item_name.setText(newsList.get(position).getTitle());
+        holder.news_item_text.setText(newsList.get(position).getText());
 
         return convertView;
     }
 
     static class ViewHolder {
-        TextView drink_item_name;
-        TextView drink_item_preis;
+        TextView news_item_name;
+        TextView news_item_text;
     }
 
 }

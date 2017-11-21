@@ -138,6 +138,17 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 Log.e(LOG_TAG, "Caught exception when trying to switch intent to 'ShishaActivity'");
                 Log.e(LOG_TAG, e.toString());
             }
+        } else if (id == R.id.nav_aboutDev) {
+            drawerLayout.closeDrawer(GravityCompat.START);
+            Log.d(LOG_TAG, "Clicked nav_aboutDev");
+
+            try {
+                Intent intent = new Intent(HomeActivity.this, AboutAppActivity.class);
+                this.startActivity(intent);
+            } catch (Exception e) {
+                Log.e(LOG_TAG, "Caught exception when trying to switch intent to 'AboutAppActivity'");
+                Log.e(LOG_TAG, e.toString());
+            }
         } else if (id == R.id.nav_exit) {
             drawerLayout.closeDrawer(GravityCompat.START);
             Log.d(LOG_TAG, "Clicked nav_exit");

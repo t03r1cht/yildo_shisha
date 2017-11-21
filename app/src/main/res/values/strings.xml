@@ -20,7 +20,11 @@
 
     <!-- About us Content -->
     <string name="aboutus_title">Über uns</string>
-    <string name="aboutus_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</string>
+    <string name="aboutus_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</string>
+
+    <!-- Über die App -->
+    <string name="aboutdev_entwickler">Entwickelt von Marc Friedrich</string>
+    <string name="aboutdev_text">Dies ist die offizielle App für die Shisha Bar \"Yildo\". \n\n Fragen und Anregungen an santya@protonmail.com</string>
 
     <!-- Getränke -->
     <string name="section_warme_getraenke">Warme Getränke</string>
