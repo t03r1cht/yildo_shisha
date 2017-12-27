@@ -5,20 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorAccent"
-    tools:layout_height="140dp">
+    android:orientation="vertical"
+    tools:layout_height="100dp">
 
-    <TextView
-        android:id="@+id/nav_header_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:paddingBottom="80px"
-        android:paddingTop="80px"
-        android:text="@string/yildo_nav_bar_tv"
-        android:textColor="@color/lightPrimaryColor"
-        android:textSize="75px" />
-
+        android:visibility="visible"
+        app:srcCompat="@drawable/logo6" />
 
 
 </RelativeLayout>

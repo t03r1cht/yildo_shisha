@@ -105,15 +105,20 @@ public class SqliteHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = getWritableDatabase();
         String query = "SELECT * FROM " + TABLE_GETRAENKE + " WHERE 1";
 
-        Cursor c = db.rawQuery(query, null);
-        c.moveToFirst();
-        int i = 0;
+        try {
+            Cursor c = db.rawQuery(query, null);
+            c.moveToFirst();
+            int i = 0;
 
-        while (!c.isAfterLast()) {
-            i++;
+            while (!c.isAfterLast()) {
+                i++;
+            }
+            db.close();
+            return i;
+        } catch (Exception e) {
+            Log.d(LOG_TAG, "Error at get_db_items_count\n" + e);
+            return -1;
         }
-        db.close();
-        return i;
     }
 
 

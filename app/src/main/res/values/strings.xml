@@ -26,12 +26,11 @@
     <string name="aboutdev_entwickler">Entwickelt von</string>
     <string name="aboutdev_von">Marc Friedrich\nE-Mail: santya@protonmail.com</string>
     <string name="imp1">Angaben gemäß § 5 TMG</string>
-    <string name="imp2">Max Muster\nMusterweg\n12345 Musterstadt</string>
+    <string name="imp2">Yildirim Gökkaya\nUntere Vorstadt 33\n72458 Albstadt</string>
     <string name="imp3_1">Kontakt</string>
-    <string name="imp3">Telefon: 123\nFax: 123\nE-Mail: a@a.de</string>
-    <string name="imp4_1">Umsatzsteuer-ID:</string>
-    <string name="imp4">Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz: 123</string>
-    <string name="imp5">Wirtschafts-ID:\n123</string>
+    <string name="imp3">Telefon: 123\nFax: 123\nE-Mail: yildo@web.de</string>
+    <string name="imp4_1">Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz:</string>
+    <string name="imp4">Umsatzsteuer-ID: 53182/26102</string>
     <string name="imp6_1">Aufsichtsbehörde:</string>
     <string name="imp6">123</string>
 

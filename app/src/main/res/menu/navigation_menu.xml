@@ -26,10 +26,10 @@
             android:icon="@mipmap/ic_local_drink_black_24dp"
             android:title="@string/nav_drinks" />
 
-        <item
-            android:id="@+id/nav_database"
-            android:icon="@mipmap/ic_local_drink_black_24dp"
-            android:title="Debug" />
+        <!--<item-->
+        <!--android:id="@+id/nav_database"-->
+        <!--android:icon="@mipmap/ic_local_drink_black_24dp"-->
+        <!--android:title="Debug" />-->
         <item
             android:id="@+id/nav_smokes"
             android:icon="@mipmap/ic_smoking_rooms_black_24dp"
