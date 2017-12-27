@@ -22,9 +22,19 @@
     <string name="aboutus_title">Über uns</string>
     <string name="aboutus_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</string>
 
-    <!-- Über die App -->
-    <string name="aboutdev_entwickler">Entwickelt von Marc Friedrich</string>
-    <string name="aboutdev_text">Dies ist die offizielle App für die Shisha Bar \"Yildo\". \n\n Fragen und Anregungen an santya@protonmail.com</string>
+    <!-- Impressum -->
+    <string name="aboutdev_entwickler">Entwickelt von</string>
+    <string name="aboutdev_von">Marc Friedrich\nE-Mail: santya@protonmail.com</string>
+    <string name="imp1">Angaben gemäß § 5 TMG</string>
+    <string name="imp2">Max Muster\nMusterweg\n12345 Musterstadt</string>
+    <string name="imp3_1">Kontakt</string>
+    <string name="imp3">Telefon: 123\nFax: 123\nE-Mail: a@a.de</string>
+    <string name="imp4_1">Umsatzsteuer-ID:</string>
+    <string name="imp4">Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz: 123</string>
+    <string name="imp5">Wirtschafts-ID:\n123</string>
+    <string name="imp6_1">Aufsichtsbehörde:</string>
+    <string name="imp6">123</string>
+
 
     <!-- Getränke -->
     <string name="section_warme_getraenke">Warme Getränke</string>

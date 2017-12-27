@@ -43,10 +43,6 @@
             android:id="@+id/nav_imprint"
             android:icon="@mipmap/ic_account_balance_black_24dp"
             android:title="@string/nav_imprint" />
-        <item
-            android:id="@+id/nav_aboutDev"
-            android:icon="@mipmap/ic_developer_mode_black_24dp"
-            android:title="@string/nav_aboutDev" />
     </group>
 
     <group

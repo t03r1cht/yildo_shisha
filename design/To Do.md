@@ -1,0 +1,8 @@
+- [ ] Startlogo
+- [ ] App Logo
+- [ ] Neuigkeiten füllen
+- [ ] Über uns füllen
+- [ ] Checken, ob Datenbank gefüllt ist, und wenn nicht, füllen
+- [x] Über App in Impressum integrieren
+- [x] Verlassen Button fixen
+- [ ] App in Google Play
